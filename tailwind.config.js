@@ -28,6 +28,9 @@ module.exports = {
     },
     fontFamily: {
       roboto: ['Roboto', 'sans-serif'],
+      nameFont:['BricolageGrotesque', 'sans-serif'],
+      BebasNeue: ['Bebas Neue', 'sans-serif'],
+      Onest: ['Onest', 'sans-serif'],
     },
   },
   plugins: [],

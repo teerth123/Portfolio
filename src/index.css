@@ -1,3 +1,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Name{
+    color: black;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight:400;
+    text-align: left;
+    margin-block: 5px;
+}
+.Img{
+    object-fit: cover;
+    object-position: top;
+    width: 16.6667%;
+    height:auto;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
+.Post{
+    color: gray;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight:400;
+    text-align: left;
+    margin-block: 5px;
+}
+.Links{
+    color:rgb(79 70 229);
+    font-family: 'nameFont';
+    font-size: 16px;
+    font-weight:400;
+    text-align: left;
+    margin-block: 5px;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+}
+.Links:hover {
+    color: white;
+    background-color: rgb(79 70 229);
+  }
+.Para{
+    color:black;
+    font-family: 'nameFont';
+    font-size: 16px;
+    font-weight:400;
+    text-align: left;
+    width: 70%;
+    word-spacing: 4px;
+}
+.Heading{
+    color:black;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight:500;
+    text-align: left;
+    margin-block: 5px;
+    word-spacing: 4px;
+}
+.Projects{
+    color:rgb(79 70 229);
+    font-family: 'nameFont';
+    font-size: 16px;
+    font-weight:600;
+    text-align: left;
+    margin-block: 5px;
+    cursor: pointer;
+}
+::selection {
+    background-color: black; /* Your custom background color */
+    color: #fff; /* White text color for better contrast */
+}
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-selection {
+    background-color: black;
+    color: #fff;
+}
