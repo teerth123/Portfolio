@@ -1,4 +1,7 @@
-import Card from "@/components/Card";
+"use client";
+import { motion, spring } from "framer-motion";
+// import {motion} from "motion/react"
+// import Card from "@/components/Card";
 import { Inter } from "next/font/google";
 import { Geist, Geist_Mono } from "next/font/google";
 import Work from "@/components/Work";
@@ -17,37 +20,86 @@ export default function DexTLogo() {
   return (
     <>
       <div className="h-[50vh] w-screen flex flex-col justify-center items-center bg-black">
-        <div className="absolute z-0 rounded-full opacity-70 bg-[linear-gradient(180deg,rgba(133,133,133,0)_0%,rgba(0,0,0,0.2)_79.81%)] scale-200">
-          <svg
+        <div
+          className="absolute z-0 rounded-full opacity-70 bg-[linear-gradient(180deg,rgba(133,133,133,0)_0%,rgba(0,0,0,0.2)_79.81%)] scale-200">
+          <motion.svg
             width="521"
             height="521"
             viewBox="0 0 521 521"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+
+            initial={{
+              opacity: 0.2
+            }}
+            animate={{
+              opacity: 1
+            }}
+            transition={{
+              duration: 2,
+            }}
           >
-            <circle
+            <motion.circle
               cx="260.5"
               cy="260.5"
               r="260"
               fill="url(#paint0_linear_0_1)"
               fillOpacity="0.2"
               stroke="#252525"
+            // initial={{
+            //   scale:1, 
+            // }}
+            // animate={{
+            //   scale:2, 
+            // }}
+            // transition={{
+            //   duration:6,
+            //   // type:spring,
+            //   repeat:Infinity,
+            //   repeatType:"reverse"
+            // }}
             />
-            <circle
+            <motion.circle
               cx="258.5"
               cy="262.5"
               r="219"
               fill="url(#paint1_linear_0_1)"
               fillOpacity="0.2"
               stroke="#252525"
+
+            // initial={{
+            //   scale:1, 
+            // }}
+            // animate={{
+            //   scale:2, 
+            // }}
+            // transition={{
+            //   duration:6,
+            //   // type:spring,
+            //   repeat:Infinity,
+            //   repeatType:"reverse"
+            // }}
             />
-            <circle
+            <motion.circle
               cx="260.5"
               cy="262.5"
               r="162"
               fill="url(#paint2_linear_0_1)"
               fillOpacity="0.2"
               stroke="#252525"
+
+            // initial={{
+            //   scale:1, 
+            // }}
+            // animate={{
+            //   scale:2, 
+            // }}
+            // transition={{
+            //   duration:6,
+            //   // type:spring,
+            //   repeat:Infinity,
+            //   repeatType:"reverse"
+            // }}
             />
             <line
               x1="270.5"
@@ -160,11 +212,34 @@ export default function DexTLogo() {
                 <stop offset="1" stopOpacity="0" />
               </linearGradient>
             </defs>
-          </svg>
+          </motion.svg>
         </div>
         <div className="z-10">
-          <h1 className={`text-left my-5 text-[20px] font-semibold text-[#8b8b8b]`}>TEERTH KULKARNI</h1>
-          <div className="h-fit w-fit flex justify-center items-center   ">
+          <motion.h1
+            className={`text-left my-5 text-[20px] font-semibold text-[#8b8b8b]`}
+            initial={{
+              opacity: 0,
+              y: -20,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 2.5,
+            }}
+          >TEERTH KULKARNI</motion.h1>
+          <motion.div 
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 2.5,
+            }}
+          className="h-fit w-fit flex justify-center items-center   ">
             <svg
               width="434"
               height="133"
@@ -283,9 +358,21 @@ export default function DexTLogo() {
                 </linearGradient>
               </defs>
             </svg>
-          </div>
+          </motion.div>
         </div>
-        <h1 className={`text-center mt-10 text-[20px] text-[#888]`}>Coding, designing, failing, and learning constantly <br /> all to push my luck arc and bend the odds.</h1>
+        <motion.h1 
+          initial={{
+            opacity: 0,
+            y: 20,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 2.5,
+          }}
+        className={`text-center mt-10 text-[20px] text-[#888]`}>Coding, designing, failing, and learning constantly <br /> all to push my luck arc and bend the odds.</motion.h1>
       </div>
 
       <Work />
