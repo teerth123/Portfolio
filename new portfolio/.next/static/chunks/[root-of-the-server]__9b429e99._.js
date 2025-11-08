@@ -254,6 +254,12 @@ const work = {
             title: "Bento2 for Striver TUF+",
             alt: "Teerth",
             demoLink: "https://tufff.netlify.app/"
+        },
+        {
+            src: "/dodoPayments.png",
+            title: "Feature Section + oss Contribution",
+            alt: "Teerth",
+            demoLink: "https://github.com/dodopayments/billingsdk/pull/161"
         }
     ],
     designs: [
@@ -304,6 +310,12 @@ const work = {
             title: "Hero Redesign for Klavis-AI YC-Backed Startup",
             alt: "Teerth",
             demoLink: "https://klavisaihero.netlify.app/"
+        },
+        {
+            src: "/dodoPayments.png",
+            title: "Feature Section + oss Contribution",
+            alt: "Teerth",
+            demoLink: "https://github.com/dodopayments/billingsdk/pull/161"
         }
     ],
     other: [
@@ -368,8 +380,8 @@ function Work() {
                 demoLink: item.demoLink
             }, idx, false, {
                 fileName: "[project]/components/Work.tsx",
-                lineNumber: 63,
-                columnNumber: 13
+                lineNumber: 195,
+                columnNumber: 7
             }, this));
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -392,13 +404,13 @@ function Work() {
                                 children: cat.charAt(0).toUpperCase() + cat.slice(1)
                             }, void 0, false, {
                                 fileName: "[project]/components/Work.tsx",
-                                lineNumber: 75,
-                                columnNumber: 33
+                                lineNumber: 217,
+                                columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/Work.tsx",
-                            lineNumber: 74,
-                            columnNumber: 29
+                            lineNumber: 216,
+                            columnNumber: 15
                         }, this) : // Unselected button
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "pt-[1px] h-fit bg-white rounded-[50px] w-[120px] sm:w-[150px] text-center",
@@ -407,31 +419,31 @@ function Work() {
                                 children: cat.charAt(0).toUpperCase() + cat.slice(1)
                             }, void 0, false, {
                                 fileName: "[project]/components/Work.tsx",
-                                lineNumber: 82,
-                                columnNumber: 33
+                                lineNumber: 224,
+                                columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/Work.tsx",
-                            lineNumber: 81,
-                            columnNumber: 29
+                            lineNumber: 223,
+                            columnNumber: 15
                         }, this)
                     }, cat, false, {
                         fileName: "[project]/components/Work.tsx",
-                        lineNumber: 71,
-                        columnNumber: 21
+                        lineNumber: 209,
+                        columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/Work.tsx",
-                lineNumber: 69,
-                columnNumber: 13
+                lineNumber: 207,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "columns-1 md:columns-2 lg:columns-3  gap-6 p-6 space-y-0 bg-black",
                 children: renderWork()
             }, void 0, false, {
                 fileName: "[project]/components/Work.tsx",
-                lineNumber: 91,
-                columnNumber: 13
+                lineNumber: 233,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true);
@@ -469,7 +481,7 @@ function DexTLogo() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "h-[50vh] w-screen flex flex-col justify-center items-center bg-black",
+                className: "h-[50vh] w-screen flex flex-col justify-center items-center bg-black ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute z-0 rounded-full opacity-70 bg-[linear-gradient(180deg,rgba(133,133,133,0)_0%,rgba(0,0,0,0.2)_79.81%)] scale-200",

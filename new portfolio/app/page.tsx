@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export default function DexTLogo() {
   return (
     <>
-      <div className="h-[50vh] w-screen flex flex-col justify-center items-center bg-black">
+      <div className="h-[50vh] w-screen flex flex-col justify-center items-center bg-black ">
         <div
           className="absolute z-0 rounded-full opacity-70 bg-[linear-gradient(180deg,rgba(133,133,133,0)_0%,rgba(0,0,0,0.2)_79.81%)] scale-200">
           <motion.svg
