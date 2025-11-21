@@ -1,5 +1,6 @@
 "use client";
 import Card from "@/components/Card";
+import { s } from "motion/react-client";
 
 import { useState } from "react";
 
@@ -134,14 +135,32 @@ const work = {
       alt: "Teerth",
       demoLink: "https://github.com/dodopayments/billingsdk/pull/161",
     },
+    {
+      src: "/raunoGlyph.png",
+      title: "Animated Design Concept inspired by Rauno",
+      alt: "rauno",
+      demoLink: "https://rauno-mauve.vercel.app/",
+    },
+    {
+      src: "/dodoFeature.png",
+      title: "Design Concept for Dodo Payments",
+      alt: "Teerth",
+      demoLink: "/",
+    },
+    {
+      src: "/klavisTweet.png",
+      title: "KlavisAI(YC25) publicly appreciated my work",
+      alt: "Teerth",
+      demoLink: "https://x.com/Klavis_AI/status/1960771091179413561?s=20",
+    }
   ],
 
   other: [
     {
-      src: "/typing.png",
-      title: "MonkeyType 30 Sec Challenge",
+      src: "/monkeyType.png", //before -> typing.png
+      title: "MonkeyType Profile",
       alt: "Teerth",
-      demoLink: "/",
+      demoLink: "https://monkeytype.com/profile/DexT1",
     },
     {
       src: "/skit.png",
@@ -169,6 +188,18 @@ const work = {
       demoLink:
         "https://www.instagram.com/reel/Cjszlp3PWr4/?utm_source=ig_web_copy_link",
     },
+    {
+      src:"/chess_com.png",
+      title:"Highest Rating on 1800+ Chess.com ",
+      alt:"Teerth",
+      demoLink:"https://www.chess.com/member/teerthkulkarni"
+    },
+    {
+      src:"/YT.png",
+      title:"I loved his style",
+      alt:"Teerth",
+      demoLink:"https://www.youtube.com/shorts/lNKA3TPNVLo"
+    }
   ],
 } as const;
 
@@ -202,9 +233,29 @@ export default function Work() {
     ));
   };
 
+  // For mobile: show all items from all categories, remove duplicates
+  const renderAllWorkMobile = () => {
+    const allItems = [...work.dev, ...work.designs, ...work.other];
+    // Filter out duplicates based on src
+    const uniqueItems = allItems.filter(
+      (item, index, self) =>
+        index === self.findIndex((t) => t.src === item.src)
+    );
+    return uniqueItems.map((item, idx) => (
+      <Card
+        key={idx}
+        src={item.src}
+        title={item.title}
+        alt={item.alt}
+        demoLink={item.demoLink}
+      />
+    ));
+  };
+
   return (
     <>
-      <div className="relative flex flex-wrap items-center justify-center pb-10 gap-3 sm:gap-[45px] bg-black px-4 z-20">
+      {/* Category buttons - hidden on mobile, visible on md+ */}
+      <div className="hidden md:flex relative flex-wrap items-center justify-center pb-10 gap-3 sm:gap-[45px] bg-black px-4 z-20">
         {["Chaos", "dev", "designs", "other"].map((cat) => (
           <div
             className="cursor-pointer"
@@ -230,8 +281,14 @@ export default function Work() {
         ))}
       </div>
 
-      <div className="columns-1 md:columns-2 lg:columns-3  gap-6 p-6 space-y-0 bg-black">
+      {/* Desktop/Tablet: filtered work based on selected category */}
+      <div className="hidden md:block columns-1 md:columns-2 lg:columns-3 gap-6 p-6 space-y-0 bg-black">
         {renderWork()}
+      </div>
+
+      {/* Mobile: all work items without category filtering */}
+      <div className="md:hidden columns-1 gap-6 p-6 space-y-0 bg-black">
+        {renderAllWorkMobile()}
       </div>
     </>
   );
