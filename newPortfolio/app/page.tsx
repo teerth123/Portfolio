@@ -21,7 +21,7 @@ export default function DexTLogo() {
     <>
       <div className="h-[50vh] w-screen flex flex-col justify-center items-center bg-black ">
         <div
-          className="absolute z-0 rounded-full opacity-70 bg-[linear-gradient(180deg,rgba(133,133,133,0)_0%,rgba(0,0,0,0.2)_79.81%)] scale-200">
+          className="hidden lg:block absolute z-0 rounded-full opacity-70 bg-[linear-gradient(180deg,rgba(133,133,133,0)_0%,rgba(0,0,0,0.2)_79.81%)] scale-200">
           <motion.svg
             width="521"
             height="521"
@@ -216,7 +216,7 @@ export default function DexTLogo() {
         </div>
         <div className="z-10">
           <motion.h1
-            className={`text-left my-5 text-[20px] font-semibold text-[#8b8b8b]`}
+            className={`text-left my-5 text-[20px] px-10 font-semibold text-[#8b8b8b]`}
             initial={{
               opacity: 0,
               y: -20,
@@ -246,6 +246,7 @@ export default function DexTLogo() {
               viewBox="0 0 434 133"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              style={{ transform: 'scale(0.8)' }}
             >
               <path
                 d="M432.519 0.681641V24.1562H393.046V130.611H365.102V24.1562H325.63V0.681641H432.519Z"

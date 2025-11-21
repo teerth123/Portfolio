@@ -467,7 +467,7 @@ function DexTLogo() {
                 className: "h-[50vh] w-screen flex flex-col justify-center items-center bg-black ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute z-0 rounded-full opacity-70 bg-[linear-gradient(180deg,rgba(133,133,133,0)_0%,rgba(0,0,0,0.2)_79.81%)] scale-200",
+                        className: "hidden lg:block absolute z-0 rounded-full opacity-70 bg-[linear-gradient(180deg,rgba(133,133,133,0)_0%,rgba(0,0,0,0.2)_79.81%)] scale-200",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].svg, {
                             width: "521",
                             height: "521",
@@ -822,7 +822,7 @@ function DexTLogo() {
                         className: "z-10",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h1, {
-                                className: `text-left my-5 text-[20px] font-semibold text-[#8b8b8b]`,
+                                className: `text-left my-5 text-[20px] px-10 font-semibold text-[#8b8b8b]`,
                                 initial: {
                                     opacity: 0,
                                     y: -20
@@ -857,6 +857,9 @@ function DexTLogo() {
                                     viewBox: "0 0 434 133",
                                     fill: "none",
                                     xmlns: "http://www.w3.org/2000/svg",
+                                    style: {
+                                        transform: 'scale(0.8)'
+                                    },
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                             d: "M432.519 0.681641V24.1562H393.046V130.611H365.102V24.1562H325.63V0.681641H432.519Z",
@@ -864,7 +867,7 @@ function DexTLogo() {
                                             stroke: "url(#paint1_linear)"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 250,
+                                            lineNumber: 251,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -873,7 +876,7 @@ function DexTLogo() {
                                             stroke: "url(#paint3_linear)"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 255,
+                                            lineNumber: 256,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -882,7 +885,7 @@ function DexTLogo() {
                                             stroke: "url(#paint5_linear)"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 260,
+                                            lineNumber: 261,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -891,7 +894,7 @@ function DexTLogo() {
                                             stroke: "url(#paint7_linear)"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 265,
+                                            lineNumber: 266,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
@@ -908,7 +911,7 @@ function DexTLogo() {
                                                             stopColor: "#3A3A3A"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 279,
+                                                            lineNumber: 280,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -916,13 +919,13 @@ function DexTLogo() {
                                                             stopColor: "#999898"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 280,
+                                                            lineNumber: 281,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 271,
+                                                    lineNumber: 272,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
@@ -937,7 +940,7 @@ function DexTLogo() {
                                                             stopColor: "white"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 290,
+                                                            lineNumber: 291,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -946,13 +949,13 @@ function DexTLogo() {
                                                             stopOpacity: "0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 291,
+                                                            lineNumber: 292,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 282,
+                                                    lineNumber: 283,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
@@ -967,7 +970,7 @@ function DexTLogo() {
                                                             stopColor: "#3A3A3A"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 301,
+                                                            lineNumber: 302,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -975,13 +978,13 @@ function DexTLogo() {
                                                             stopColor: "#999898"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 302,
+                                                            lineNumber: 303,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 293,
+                                                    lineNumber: 294,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
@@ -996,7 +999,7 @@ function DexTLogo() {
                                                             stopOpacity: "0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 312,
+                                                            lineNumber: 313,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1004,13 +1007,13 @@ function DexTLogo() {
                                                             stopColor: "white"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 313,
+                                                            lineNumber: 314,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 304,
+                                                    lineNumber: 305,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
@@ -1025,7 +1028,7 @@ function DexTLogo() {
                                                             stopColor: "#3A3A3A"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 323,
+                                                            lineNumber: 324,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1033,13 +1036,13 @@ function DexTLogo() {
                                                             stopColor: "#999898"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 324,
+                                                            lineNumber: 325,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 315,
+                                                    lineNumber: 316,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
@@ -1054,7 +1057,7 @@ function DexTLogo() {
                                                             stopOpacity: "0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 334,
+                                                            lineNumber: 335,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1062,13 +1065,13 @@ function DexTLogo() {
                                                             stopColor: "white"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 335,
+                                                            lineNumber: 336,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 326,
+                                                    lineNumber: 327,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
@@ -1083,7 +1086,7 @@ function DexTLogo() {
                                                             stopColor: "#3A3A3A"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 345,
+                                                            lineNumber: 346,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1091,13 +1094,13 @@ function DexTLogo() {
                                                             stopColor: "#999898"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 346,
+                                                            lineNumber: 347,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 337,
+                                                    lineNumber: 338,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
@@ -1112,7 +1115,7 @@ function DexTLogo() {
                                                             stopColor: "white"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 356,
+                                                            lineNumber: 357,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1121,19 +1124,19 @@ function DexTLogo() {
                                                             stopOpacity: "0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 357,
+                                                            lineNumber: 358,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 348,
+                                                    lineNumber: 349,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 270,
+                                            lineNumber: 271,
                                             columnNumber: 15
                                         }, this)
                                     ]
@@ -1170,14 +1173,14 @@ function DexTLogo() {
                             "Coding, designing, failing, and learning constantly ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 375,
+                                lineNumber: 376,
                                 columnNumber: 117
                             }, this),
                             " all to push my luck arc and bend the odds."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 363,
+                        lineNumber: 364,
                         columnNumber: 9
                     }, this)
                 ]
@@ -1188,7 +1191,7 @@ function DexTLogo() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Work$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 378,
+                lineNumber: 379,
                 columnNumber: 7
             }, this)
         ]
