@@ -13,6 +13,7 @@ export default function Comp(){
                         <Link href="/macbookNeo" className="text-white">4. Macbook Neo</Link>
                         <Link href="/text1" className="text-white">5. Text1</Link>
                         <Link href="/sonner" className="text-white">6. Sonner</Link>
+                        <Link href="/book" className="text-white">7. Book</Link>
                     </div>
                 </div>
             </div>
