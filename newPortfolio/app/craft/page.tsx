@@ -1,5 +1,6 @@
 "use client";
 import Card from "@/components/Card";
+import { title } from "process";
 
 const work = {
   dev: [
@@ -38,6 +39,12 @@ const work = {
       title: "Heatmap for Chess.com",
       alt: "Teerth",
       demoLink: "https://arthteerth.vercel.app/",
+    },
+    {
+        src:"/100xlanding.png",
+        title:"Landing Page for 100xDevs",
+        alt:"Teerth",
+        demoLink:"https://100x.dexteerth.me/"
     },
     {
       src: "/klavis.png",
@@ -160,6 +167,12 @@ const work = {
       demoLink: "https://monkeytype.com/profile/DexT1",
     },
     {
+      src: "/placed.png", //before -> typing.png
+      title: "Got on campus placements",
+      alt: "Teerth",
+      demoLink: "https://x.com/DexTee_17/status/1983943382733877580",
+    },
+    {
       src: "/skit.png",
       title: "PACE SKIT",
       alt: "Teerth",
@@ -203,16 +216,27 @@ const work = {
 type WorkCategory = "dev" | "designs" | "other";
 
 export default function Work() {
-  // All items in one list: dev first, then designs, then other — deduplicated
+  // Deduplicate all items
   const allItems = [...work.dev, ...work.designs, ...work.other];
   const uniqueItems = allItems.filter(
     (item, index, self) =>
       index === self.findIndex((t) => t.src === item.src)
   );
 
+  // Distribute items across 3 columns round-robin style
+  // so the best items (which come first) land at the TOP of each column
+  const numCols = 3;
+  const columns: (typeof uniqueItems)[] = Array.from({ length: numCols }, () => []);
+  uniqueItems.forEach((item, i) => {
+    columns[i % numCols].push(item);
+  });
+  // Flatten back: col1 top-to-bottom, col2 top-to-bottom, col3 top-to-bottom
+  // This matches how CSS columns fills: top-to-bottom per column
+  const reordered = columns.flat();
+
   return (
     <div className="columns-1 md:columns-2 lg:columns-3 gap-6 p-6 space-y-0 bg-black">
-      {uniqueItems.map((item, idx) => (
+      {reordered.map((item, idx) => (
         <Card
           key={idx}
           src={item.src}
@@ -224,3 +248,6 @@ export default function Work() {
     </div>
   );
 }
+
+
+//mention tweet got job, figma files, 100xdevs, 
