@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../../newPortfolio/app/projects/page.tsx"],"sourcesContent":["export default function Projects(){\n    return(\n        <>\n            \n        </>\n    )\n}"],"names":[],"mappings":"oVAAe,SAAS,IACpB,MACI,CAAA,EAAA,EAAA,GAAA,EAAA,EAAA,QAAA,CAAA,CAAA,EAIR"}
