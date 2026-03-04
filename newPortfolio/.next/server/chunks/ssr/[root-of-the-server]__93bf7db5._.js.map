@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///home/batman/Desktop/Projects/portfolio/Portfolio/portfolio/app/page.tsx"],"sourcesContent":["import { Giest } from \"next/font/google\";\n\nconst inter = Inter({ subsets: [\"latin\"] });\n\nexport default function Home() {\n  return (\n    <>\n      <div className=\"h-screen w-screen flex justify-center items-center\">\n        <h1 className={`${inter.className} text-[96px] font-bold`}>DexT</h1>\n      </div>\n    </>\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA,MAAM,QAAQ,MAAM;IAAE,SAAS;QAAC;KAAQ;AAAC;AAE1B,SAAS;IACtB,qBACE;kBACE,cAAA,8OAAC;YAAI,WAAU;sBACb,cAAA,8OAAC;gBAAG,WAAW,GAAG,MAAM,SAAS,CAAC,sBAAsB,CAAC;0BAAE;;;;;;;;;;;;AAInE","debugId":null}}]
-}

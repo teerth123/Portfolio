@@ -1,65 +1,83 @@
-"use client";
-
-import { motion } from "motion/react";
+"use client"
 import { useState } from "react";
+import {motion} from "motion/react" 
 
-export default function CardStack() {
-  const [x, setX] = useState(125);
-  const [y, setY] = useState(70);
-  const [z, setZ] = useState(0);
-  const [gap, setGap] = useState(20);
-  const [index, setIndex] = useState(-10);
+export default function Home() {
+    const [yvalue, setYValue] = useState(55);
+    const [xvalue, setXValue] = useState(20);
+    const [gap, setGap] = useState(15);
 
-  return (
-    <div className="h-screen w-screen bg-black">
-      <div className="fixed z-50 top-5 right-5">
-        <div className="flex gap-2">
-          <h1 className="text-white">X</h1>
-          <input type="range" min={0} max={360} value={x} onChange={(e) => setX(Number(e.target.value))} />
-          <h1 className="text-white">{x}</h1>
-        </div>
-        <div className="flex gap-2">
-          <h1 className="text-white">Y</h1>
-          <input type="range" min={0} max={360} value={y} onChange={(e) => setY(Number(e.target.value))} />
-          <h1 className="text-white">{y}</h1>
-        </div>
-        <div className="flex gap-2">
-          <h1 className="text-white">Z</h1>
-          <input type="range" min={0} max={360} value={z} onChange={(e) => setZ(Number(e.target.value))} />
-          <h1 className="text-white">{z}</h1>
-        </div>
-        <div className="flex gap-2">
-          <h1 className="text-white">Gap</h1>
-          <input type="range" min={0} max={100} value={gap} onChange={(e) => setGap(Number(e.target.value))} />
-          <h1 className="text-white">{gap}</h1>
-        </div>
-      </div>
+    const [clicked, setClicked] = useState<number | null>(null);
 
-      <div className="h-screen w-screen flex justify-center items-center" style={{ perspective: "1200px" }}>
-        <div style={{ transformStyle: "preserve-3d", position: "relative", width: "18rem", height: "20rem" }}>
-          {Array.from({ length: 5 }).map((_, i) => {
-            const distance = Math.abs(index - i);
-            const isNear = index >= 0 && distance <= 5;
-            const height = isNear ? 250 - distance * 30 : 100;
+    const cardClicked = (e:number)=>{
+        setClicked((prev)=>(prev===e)?null : e)
+    }
 
-            return (
-              <motion.div
-                key={i}
-                className="h-80 w-72 border border-white rounded-xl bg-black"
-                // animate={{ height }}
-                // transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                onMouseEnter={() => setIndex(i)}
-                onMouseLeave={() => setIndex(-10)}
-                style={{
-                  position: "absolute",
-                  bottom: 0,
-                  transform: `translate(${i * gap * 0.1}px, ${i * gap * 0.1}px) translateZ(${i * gap}px) rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z}deg)`,
-                }}
-              />
-            );
-          })}
-        </div>
-      </div>
-    </div>
-  );
+    const getZ = (index:number)=>{
+        if (clicked === null) return gap * index
+        if (index === clicked) return gap * index
+        if (index > clicked) return gap * index + 180
+        return gap * index - 180
+    }
+    
+    return(
+        <>
+           <div className="fixed top-5 right-5 z-50">
+                <div className="flex justify-between items-center gap-x-2">
+                    <h1>rotateY</h1>
+                    <input
+                        type="range"
+                        min={0}
+                        max={360}
+                        value={yvalue}
+                        onChange={(e) => setYValue(Number(e.target.value))}
+                    />
+                    <h1>{yvalue}</h1>
+                </div>
+                <div className="flex justify-between items-center gap-x-2">
+                    <h1>rotateX</h1>
+                    <input
+                        type="range"
+                        min={0}
+                        max={360}
+                        value={xvalue}
+                        onChange={(e) => setXValue(Number(e.target.value))}
+                    />
+                    <h1>{xvalue}</h1>
+                </div>
+                <div className="flex justify-between items-center gap-x-2">
+                    <h1>Gap</h1>
+                    <input
+                        type="range"
+                        min={1}
+                        max={100}
+                        value={gap}
+                        onChange={(e) => setGap(Number(e.target.value))}
+                    />
+                    <h1>{gap}</h1>
+                </div>
+            </div>
+            <div className="flex justify-center items-center h-screen w-screen"  style={{perspective:"1000px", transformOrigin:"preserve-3d"}}>
+                <motion.div 
+                    animate={{
+                        rotateY: -yvalue,
+                        rotateX: -xvalue
+                    }}
+                    style={{ transformStyle: "preserve-3d" }}
+                    className="flex justify-center items-center"
+                   
+                    >
+                        {
+                            Array.from({length:5}).map((i, index)=>
+                             (
+                                <motion.div key={index} className="absolute h-72 w-80 rounded-xl border border-white bg-black" onClick={()=>cardClicked(index)}
+                                animate={{ z: getZ(index)}} whileHover={{y:-10, borderColor:"#04D9FF", boxShadow:"0 0 20px rgba(4, 217, 255, 0.8)", cursor:"pointer"}}>
+                                    <h1 className="text-white text-3xl flex justify-center items-center h-full">Card {index + 1}</h1>
+                                </motion.div>
+                            ))
+                        }
+                </motion.div>
+            </div>
+        </>
+    )
 }

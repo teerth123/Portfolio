@@ -1,11 +1,16 @@
 {
+  "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/card-stack/page": "app/card-stack/page.js",
   "/components/page": "app/components/page.js",
   "/craft/page": "app/craft/page.js",
+  "/cursorText/page": "app/cursorText/page.js",
   "/emil/page": "app/emil/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/macbookNeo/page": "app/macbookNeo/page.js",
   "/new/page": "app/new/page.js",
   "/page": "app/page.js",
-  "/projects/page": "app/projects/page.js"
+  "/projects/page": "app/projects/page.js",
+  "/resources/page": "app/resources/page.js",
+  "/text1/page": "app/text1/page.js"
 }

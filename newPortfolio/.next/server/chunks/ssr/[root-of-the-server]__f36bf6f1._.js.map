@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///home/batman/Desktop/Projects/Portfolio/newPortfolio/app/new2/page.tsx"],"sourcesContent":["import { div } from \"motion/react-client\";\n\nexport default function NewPage() {\n    return(\n        <>\n            <div className=\"h-screen w-screen flex justify-center items-center\">\n                <div className=\"flex justify-around items-center\">\n                    {\n                        Array.from({ length: 9}, (_, i) => (\n                            <div key={i} className=\"p-4 rounded mb-2 \">\n                                {\n                                    Array.from({ length: 6}, (_, j) => (\n                                        <div key={j} className=\"p-1 bg-gray-400 rounded mb-1 h-10 w-10\" ></div>\n                                    ))\n                                }\n                            </div>\n                        ))\n                    }\n                </div>\n            </div>\n        </>\n    )\n}"],"names":[],"mappings":";;;;;AAEe,SAAS;IACpB,qBACI;kBACI,cAAA,8OAAC;YAAI,WAAU;sBACX,cAAA,8OAAC;gBAAI,WAAU;0BAEP,MAAM,IAAI,CAAC;oBAAE,QAAQ;gBAAC,GAAG,CAAC,GAAG,kBACzB,8OAAC;wBAAY,WAAU;kCAEf,MAAM,IAAI,CAAC;4BAAE,QAAQ;wBAAC,GAAG,CAAC,GAAG,kBACzB,8OAAC;gCAAY,WAAU;+BAAb;;;;;uBAHZ;;;;;;;;;;;;;;;;AAatC","debugId":null}}]
-}

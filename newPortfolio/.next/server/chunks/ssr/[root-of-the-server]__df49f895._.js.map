@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 37, "column": 0}, "map": {"version":3,"sources":["file:///home/batman/Desktop/Projects/Portfolio/newPortfolio/app/components/page.tsx"],"sourcesContent":["\"use client\";\nimport Link from \"next/link\";\n\nexport default function Comp(){\n    return(\n        <>\n            <div className=\"h-screen w-screen flex justify-center items-center\">\n                <div>\n                    <div className=\"flex flex-col justify-between items-start text-left\">\n                        <Link href=\"/card-stack\" className=\"text-white\">1. Card-Stack</Link>\n                        <Link href=\"/emil\" className=\"text-white\">2. Emil</Link>\n                    </div>\n                </div>\n            </div>\n        </>\n    )\n}\n\n"],"names":[],"mappings":";;;;AACA;AADA;;;AAGe,SAAS;IACpB,qBACI;kBACI,cAAA,8OAAC;YAAI,WAAU;sBACX,cAAA,8OAAC;0BACG,cAAA,8OAAC;oBAAI,WAAU;;sCACX,8OAAC,4JAAA,CAAA,UAAI;4BAAC,MAAK;4BAAc,WAAU;sCAAa;;;;;;sCAChD,8OAAC,4JAAA,CAAA,UAAI;4BAAC,MAAK;4BAAQ,WAAU;sCAAa;;;;;;;;;;;;;;;;;;;;;;;AAMlE","debugId":null}}]
-}

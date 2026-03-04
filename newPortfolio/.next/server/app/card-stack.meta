@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/card-stack/layout,_N_T_/card-stack/page,_N_T_/card-stack"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/card-stack/__PAGE__",
+    "/card-stack",
+    "/_index",
+    "/_head"
+  ]
+}
