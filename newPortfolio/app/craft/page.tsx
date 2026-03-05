@@ -1,6 +1,5 @@
 "use client";
 import Card from "@/components/Card";
-import { title } from "process";
 
 const work = {
   dev: [
@@ -250,4 +249,4 @@ export default function Work() {
 }
 
 
-//mention tweet got job, figma files, 100xdevs, 
+// figma files, 

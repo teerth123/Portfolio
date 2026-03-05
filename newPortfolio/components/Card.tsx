@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { span } from "motion/react-client"
 
 interface ImageCardProps {
   src: string
@@ -23,12 +24,12 @@ export default function ImageCard({ src, title, alt, demoLink }: ImageCardProps)
   return (
     <div
         onClick={(e)=>handleOnClick(e)} style={{cursor:demoLink && demoLink!=="/" ? "pointer" : "default"}}
-      className="relative w-full overflow-hidden cursor-pointer group "
+      className="relative w-full overflow-hidden cursor-pointer group m-2"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="flex flex-col">
-        <div className="relative overflow-hidden">
+      <div className="flex flex-col w-full">
+        <div className="relative overflow-hidden rounded-xl mb-1">
           <Image
             src={src || "/placeholder.svg"}
             alt={alt || title}
@@ -38,8 +39,8 @@ export default function ImageCard({ src, title, alt, demoLink }: ImageCardProps)
           />
         </div>
 
-        <div className="bg-black/90 backdrop-blur-sm">
-          <h3 className="text-white font-medium text-sm px-4 py-3 leading-tight">{title}</h3>
+        <div className="bg-[#181818] backdrop-blur-sm w-full rounded-xl">
+          <h3 className="text-[#7a7a7a] font-semibold text-md m-2 p-1 leading-tight">{title}</h3>
         </div>
       </div>
     </div>
