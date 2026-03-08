@@ -12,9 +12,9 @@ export default function Linear() {
 
   return (
     <>
-      <div className="fixed z-500 top-5  right-5">
+      <div className="fixed z-500 top-5  left-5">
         <div className="flex">
-          <h1 className="text-white">X</h1>
+          <h1 className="dark:text-white text-black">Rotate-X</h1>
           <input
             type="range"
             min={0}
@@ -22,10 +22,10 @@ export default function Linear() {
             value={x}
             onChange={(e) => setX(Number(e.target.value))}
           />
-          <h1 className="text-white">{x}</h1>
+          <h1 className="dark:text-white text-black">{x}</h1>
         </div>
         <div className="flex">
-          <h1 className="text-white">Y</h1>
+          <h1 className="dark:text-white text-black">Rotate-Y</h1>
           <input
             type="range"
             min={0}
@@ -33,10 +33,10 @@ export default function Linear() {
             value={y}
             onChange={(e) => setY(Number(e.target.value))}
           />
-          <h1 className="text-white">{y}</h1>
+          <h1 className="dark:text-white text-black">{y}</h1>
         </div>
         <div className="flex">
-          <h1 className="text-white">Z</h1>
+          <h1 className="dark:text-white text-black">Rotate-Z</h1>
           <input
             type="range"
             min={0}
@@ -44,10 +44,10 @@ export default function Linear() {
             value={z}
             onChange={(e) => setZ(Number(e.target.value))}
           />
-          <h1 className="text-white">{z}</h1>
+          <h1 className="dark:text-white text-black">{z}</h1>
         </div>
         <div className="flex">
-          <h1 className="text-white">Gap</h1>
+          <h1 className="dark:text-white text-black">Gap</h1>
           <input
             type="range"
             min={0}
@@ -55,7 +55,7 @@ export default function Linear() {
             value={gap}
             onChange={(e) => setGap(Number(e.target.value))}
           />
-          <h1 className="text-white">{gap}</h1>
+          <h1 className="dark:text-white text-black">{gap}</h1>
         </div>
       </div>
 

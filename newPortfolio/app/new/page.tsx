@@ -24,7 +24,7 @@ export default function New() {
   });
 
   return (
-    <div className="min-h-screen w-screen flex items-center justify-center bg-black p-6">
+    <div className="min-h-screen w-screen flex items-center justify-center bg-white dark:bg-black p-6">
       <div className="w-full max-w-[800px] ">
         <div className="relative">
           <div className="grid grid-cols-8 w-full z-0">
@@ -38,10 +38,10 @@ export default function New() {
                     <div
                       key={`${r}-${c}`}
                       style={{ gridColumn: `span ${item.span}` }}
-                      className="flex items-center justify-center rounded bg-black border border-[#6E6E6E]/20"
+                      className="flex items-center justify-center rounded bg-white dark:bg-black border border-[#6E6E6E]/20"
                     >
                       <h1
-                        className={`font-medium text-base rounded-full w-full h-full flex items-center justify-center text-[32px] ${item.black ? "text-white bg-[#6E6E6E]/20" : "text-black bg-white"}`}
+                        className={`font-medium text-base rounded-full w-full h-full flex items-center justify-center text-[32px] ${item.black ? "text-black dark:text-white bg-[#6E6E6E]/20" : "text-white dark:text-black bg-black dark:bg-white"}`}
                       >
                         {item.text}
                       </h1>
@@ -56,7 +56,7 @@ export default function New() {
                 return (
                   <div
                     key={`${r}-${c}`}
-                    className="aspect-square flex items-center justify-center rounded bg-black border border-[#6E6E6E]/20"
+                    className="aspect-square flex items-center justify-center rounded bg-white dark:bg-black border border-[#6E6E6E]/20"
                   />
                 );
               }),
@@ -74,7 +74,7 @@ export default function New() {
                 initial={{ color: "transparent" }}
                 whileHover={{ color: "white" }}
                 transition={{ duration: 0.3 }}
-                className="w-full h-full flex items-center justify-center text-white font-bold text-2xl"
+                className="w-full h-full flex items-center justify-center text-black dark:text-white font-bold text-2xl"
               >
                 <Link href={"/Projects"} className="flex w-full h-full items-center justify-center">
                 Projects
@@ -106,7 +106,7 @@ export default function New() {
                 initial={{ color: "transparent" }}
                 whileHover={{ color: "white" }}
                 transition={{ duration: 0.3 }}
-                className="w-full h-full flex items-center justify-center text-white font-bold text-2xl"
+                className="w-full h-full flex items-center justify-center text-black dark:text-white font-bold text-2xl"
               >
                 <Link href={"/craft"} className="flex w-full h-full items-center justify-center">
                 Craft
@@ -138,7 +138,7 @@ export default function New() {
                 initial={{ color: "transparent" }}
                 whileHover={{ color: "white" }}
                 transition={{ duration: 0.3 }}
-                className="w-full h-full flex items-center justify-center text-white font-bold text-2xl"
+                className="w-full h-full flex items-center justify-center text-black dark:text-white font-bold text-2xl"
               >
                 <Link href={"/components"} className="flex w-full h-full items-center justify-center">
                 Components
@@ -170,9 +170,9 @@ export default function New() {
                 initial={{ color: "transparent" }}
                 whileHover={{ color: "white" }}
                 transition={{ duration: 0.3 }}
-                className="w-full h-full flex items-center justify-center text-white font-bold text-2xl"
+                className="w-full h-full flex items-center justify-center text-black dark:text-white font-bold text-2xl"
               >
-                <Link href={"/projects"} className="flex w-full h-full items-center justify-center">
+                <Link href={"/links"} className="flex w-full h-full items-center justify-center">
                 Links
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

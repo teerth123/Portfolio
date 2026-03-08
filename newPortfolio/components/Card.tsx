@@ -39,8 +39,8 @@ export default function ImageCard({ src, title, alt, demoLink }: ImageCardProps)
           />
         </div>
 
-        <div className="bg-[#181818] backdrop-blur-sm w-full rounded-xl">
-          <h3 className="text-[#7a7a7a] font-semibold text-md m-2 p-1 leading-tight">{title}</h3>
+        <div className="bg-[#f0f0f0] dark:bg-[#181818] backdrop-blur-sm w-full rounded-xl">
+          <h3 className="text-[#4a4a4a] dark:text-[#7a7a7a] font-semibold text-md m-2 p-1 leading-tight">{title}</h3>
         </div>
       </div>
     </div>

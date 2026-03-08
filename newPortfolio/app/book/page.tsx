@@ -13,9 +13,9 @@ export default function Home(){
     const maxRotation = 40;
     return(
         <>
-            <div className="fixed top-5 right-5 z-50">
+            <div className="fixed top-5 left-5 z-50">
                 <div className="flex items-center gap-x-2">
-                    <h1>Rotate-x</h1>
+                    <h1 className="dark:text-white text-black">Rotate-x</h1>
                     <input type="range" min={0} max={360} value={xValue} onChange={(e)=>setXValue(Number(e.target.value))} />
                     <h1>{xValue}</h1>
                 </div>
