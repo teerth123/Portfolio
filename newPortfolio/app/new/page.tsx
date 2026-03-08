@@ -41,7 +41,7 @@ export default function New() {
                       className="flex items-center justify-center rounded bg-white dark:bg-black border border-[#6E6E6E]/20"
                     >
                       <h1
-                        className={`font-medium text-base rounded-full w-full h-full flex items-center justify-center text-[32px] ${item.black ? "text-black dark:text-white bg-[#6E6E6E]/20" : "text-white dark:text-black bg-black dark:bg-white"}`}
+                        className={`font-medium text-base rounded-full w-full h-full flex items-center justify-center sm:text-[32px] text-md ${item.black ? "text-black dark:text-white bg-[#6E6E6E]/20" : "text-white dark:text-black bg-black dark:bg-white"}`}
                       >
                         {item.text}
                       </h1>
@@ -194,6 +194,35 @@ export default function New() {
             </motion.div>
           </div>
         </div>
+
+        {/* mobile nav buttons — visible only on touch/small screens */}
+        <div className="grid grid-cols-4 gap-2 mt-2 sm:hidden">
+          <Link href="/Projects">
+            <div className="flex items-center justify-center gap-2 bg-[#DF3222] text-white font-bold text-lg rounded py-3">
+              Projects
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+            </div>
+          </Link>
+          <Link href="/craft">
+            <div className="flex items-center justify-center gap-2 bg-[#F2BA3C] text-white font-bold text-lg rounded py-3">
+              Craft
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+            </div>
+          </Link>
+          <Link href="/components">
+            <div className="flex items-center justify-center gap-2 bg-[#5551FE] text-white font-bold text-lg rounded py-3">
+              Components
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+            </div>
+          </Link>
+          <Link href="/links">
+            <div className="flex items-center justify-center gap-2 bg-[#16A34A] text-white font-bold text-lg rounded py-3">
+              Links
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+            </div>
+          </Link>
+        </div>
+
       </div>
     </div>
   );

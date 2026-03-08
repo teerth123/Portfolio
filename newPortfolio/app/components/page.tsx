@@ -1,17 +1,16 @@
 "use client";
 import Link from "next/link";
-import { Roboto } from "next/font/google";
+import { Urbanist } from "next/font/google";
 import { useState, useEffect } from "react";
 import { easeInOut, hover, motion } from "motion/react";
 
-const roboto = Roboto({ weight: "500", subsets: ["latin"] });
-
+const urbanist = Urbanist({ weight: ["400", "600", "700"], subsets: ["latin"] });
 export default function Comp() {
   return (
     <>
-      <div className="h-screen w-screen flex justify-center items-center">
+      <div className={`h-screen w-screen flex justify-center items-center tracking-tighter ${urbanist.className}`}>
         <div>
-          <div className="flex flex-col justify-center items-start text-center -gap-10">
+          <div className="flex flex-col justify-center items-start text-center">
             <Mixer text="Card Stack" link="/card-stack"></Mixer>
             <Mixer text="Emil Kowalski Linear" link="/emil"></Mixer>
             <Mixer text="Cursor Text Generation" link="/cursorText"></Mixer>
@@ -44,7 +43,7 @@ function Mixer({ text, link }: { text?: string; link?: string }) {
       onHoverEnd={() => setHovered(false)}
     >
       <Link href={link || "#"}>
-        <div className="h-20 overflow-hidden dark:text-white text-black text-6xl font-semibold flex">
+        <div className="h-20 overflow-hidden dark:text-white text-black text-xl sm:text-6xl font-semibold flex">
           {text?.split("").map((char, index) => {
             return (
               <motion.div
