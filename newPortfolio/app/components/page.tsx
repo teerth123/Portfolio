@@ -3,12 +3,14 @@ import Link from "next/link";
 import { Urbanist } from "next/font/google";
 import { useState, useEffect } from "react";
 import { easeInOut, hover, motion } from "motion/react";
+import { useTheme } from "../../components/ThemeProvider";
 
 const urbanist = Urbanist({ weight: ["400", "600", "700"], subsets: ["latin"] });
 export default function Comp() {
+  const { theme } = useTheme();
   return (
     <>
-      <div className={`h-screen w-screen flex justify-center items-center tracking-tighter ${urbanist.className}`}>
+      <div className={`h-auto mx-auto w-screen flex justify-center items-center tracking-tighter ${urbanist.className}`}>
         <div>
           <div className="flex flex-col justify-center items-start text-center">
             <Mixer text="Card Stack" link="/card-stack"></Mixer>
@@ -21,6 +23,11 @@ export default function Comp() {
             <Mixer text="Magnetic Button" link="/magneticButton"></Mixer>
             <Mixer text="Rauno Staggered Text" link="/staggeredText" />
             <Mixer text="Vanish Input" link="/vanishInput" />
+            {theme === "dark" && (
+              <Mixer text="Rauno(Vercel) Tabs" link="/InvertedColorTabs" />
+            )}
+            {/* <Mixer text="Context Aware Hover" link="/contextAwareHover" /> */}
+            {/* spotify - https://codepen.io/jh3y/pen/WbwZaNa */}
           </div>
         </div>
       </div>
