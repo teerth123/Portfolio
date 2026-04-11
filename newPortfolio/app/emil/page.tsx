@@ -2,6 +2,7 @@
 
 import { motion, useMotionValue, useTransform } from "motion/react";
 import { useState } from "react";
+import Slider from "../../components/Slider";
 
 export default function Linear() {
   const [x, setX] = useState(125);
@@ -14,48 +15,16 @@ export default function Linear() {
     <>
       <div className="fixed z-500 top-5  left-5">
         <div className="flex">
-          <h1 className="dark:text-white text-black">Rotate-X</h1>
-          <input
-            type="range"
-            min={0}
-            max={360}
-            value={x}
-            onChange={(e) => setX(Number(e.target.value))}
-          />
-          <h1 className="dark:text-white text-black">{x}</h1>
+          <Slider label="Rotate-X" min={0} max={360} initial={x} onChange={(v) => setX(Math.round(v))} />
         </div>
         <div className="flex">
-          <h1 className="dark:text-white text-black">Rotate-Y</h1>
-          <input
-            type="range"
-            min={0}
-            max={360}
-            value={y}
-            onChange={(e) => setY(Number(e.target.value))}
-          />
-          <h1 className="dark:text-white text-black">{y}</h1>
+          <Slider label="Rotate-Y" min={0} max={360} initial={y} onChange={(v) => setY(Math.round(v))} />
         </div>
         <div className="flex">
-          <h1 className="dark:text-white text-black">Rotate-Z</h1>
-          <input
-            type="range"
-            min={0}
-            max={360}
-            value={z}
-            onChange={(e) => setZ(Number(e.target.value))}
-          />
-          <h1 className="dark:text-white text-black">{z}</h1>
+          <Slider label="Rotate-Z" min={0} max={360} initial={z} onChange={(v) => setZ(Math.round(v))} />
         </div>
         <div className="flex">
-          <h1 className="dark:text-white text-black">Gap</h1>
-          <input
-            type="range"
-            min={0}
-            max={100}
-            value={gap}
-            onChange={(e) => setGap(Number(e.target.value))}
-          />
-          <h1 className="dark:text-white text-black">{gap}</h1>
+          <Slider label="Gap" min={0} max={100} initial={gap} onChange={(v) => setGap(Math.round(v))} />
         </div>
       </div>
 

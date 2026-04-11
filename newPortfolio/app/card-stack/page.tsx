@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react";
 import {motion} from "motion/react" 
+import Slider from "../../components/Slider";
 
 export default function Home() {
     const [yvalue, setYValue] = useState(55);
@@ -24,37 +25,13 @@ export default function Home() {
             <>
             <div className="fixed top-5 left-5 z-50">
                     <div className="flex justify-between items-center gap-x-2">
-                        <h1 className="dark:text-white text-black">rotateY</h1>
-                        <input
-                            type="range"
-                            min={0}
-                            max={360}
-                            value={yvalue}
-                            onChange={(e) => setYValue(Number(e.target.value))}
-                        />
-                        <h1 className="dark:text-white text-black">{yvalue}</h1>
+                        <Slider label="rotateY" min={0} max={360} initial={yvalue} onChange={(v)=>setYValue(Math.round(v))} />
                     </div>
                     <div className="flex justify-between items-center gap-x-2">
-                        <h1 className="dark:text-white text-black">rotateX</h1>
-                        <input
-                            type="range"
-                            min={0}
-                            max={360}
-                            value={xvalue}
-                            onChange={(e) => setXValue(Number(e.target.value))}
-                        />
-                        <h1 className="dark:text-white text-black">{xvalue}</h1>
+                        <Slider label="rotateX" min={0} max={360} initial={xvalue} onChange={(v)=>setXValue(Math.round(v))} />
                     </div>
                     <div className="flex justify-between items-center gap-x-2">
-                        <h1 className="dark:text-white text-black" >Gap</h1>
-                        <input
-                            type="range"
-                            min={1}
-                            max={100}
-                            value={gap}
-                            onChange={(e) => setGap(Number(e.target.value))}
-                        />
-                        <h1 className="dark:text-white text-black">{gap}</h1>
+                        <Slider label="Gap" min={1} max={100} initial={gap} onChange={(v)=>setGap(Math.round(v))} />
                     </div>
                 </div>
             <div className="flex justify-center items-center h-screen w-screen"  style={{perspective:"1000px", transformOrigin:"preserve-3d"}}>

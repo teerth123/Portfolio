@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { useState } from "react";
+import Slider from "../../components/Slider";
 
 export default function Scroll1() {
   const [yvalue, setYValue] = useState(0);
@@ -16,92 +17,28 @@ export default function Scroll1() {
     <>
       <div className="fixed top-5 left-5 z-50">
         <div className="flex justify-between items-center gap-x-2">
-          <h1 className="dark:text-white text-black">rotateY</h1>
-          <input
-            type="range"
-            min={0}
-            max={360}
-            value={yvalue}
-            onChange={(e) => setYValue(Number(e.target.value))}
-          />
-          <h1 className="dark:text-white text-black">{yvalue}</h1>
+          <Slider label="rotateY" min={0} max={360} initial={yvalue} onChange={(v) => setYValue(Math.round(v))} />
         </div>
         <div className="flex justify-between items-center gap-x-2">
-          <h1 className="dark:text-white text-black">rotateX</h1>
-          <input
-            type="range"
-            min={0}
-            max={360}
-            value={xvalue}
-            onChange={(e) => setXValue(Number(e.target.value))}
-          />
-          <h1 className="dark:text-white text-black">{xvalue}</h1>
+          <Slider label="rotateX" min={0} max={360} initial={xvalue} onChange={(v) => setXValue(Math.round(v))} />
         </div>
         <div className="flex justify-between items-center gap-x-2">
-          <h1 className="dark:text-white text-black">rotateZ</h1>
-          <input
-            type="range"
-            min={0}
-            max={360}
-            value={zvalue}
-            onChange={(e) => setZValue(Number(e.target.value))}
-          />
-          <h1 className="dark:text-white text-black">{zvalue}</h1>
+          <Slider label="rotateZ" min={0} max={360} initial={zvalue} onChange={(v) => setZValue(Math.round(v))} />
         </div>
         <div className="flex justify-between items-center gap-x-2">
-          <h1 className="dark:text-white text-black">Gap</h1>
-          <input
-            type="range"
-            min={1}
-            max={100}
-            value={gap}
-            onChange={(e) => setGap(Number(e.target.value))}
-          />
-          <h1 className="dark:text-white text-black">{gap}</h1>
+          <Slider label="Gap" min={1} max={100} initial={gap} onChange={(v) => setGap(Math.round(v))} />
         </div>
         <div className="flex justify-between items-center gap-x-2">
-          <h1 className="dark:text-white text-black">Xtranslate</h1>
-          <input
-            type="range"
-            min={0}
-            max={100}
-            value={XTranslate}
-            onChange={(e) => setXTranslate(Number(e.target.value))}
-          />
-          <h1 className="dark:text-white text-black">{XTranslate}</h1>
+          <Slider label="Xtranslate" min={0} max={100} initial={XTranslate} onChange={(v) => setXTranslate(Math.round(v))} />
         </div>
         <div className="flex justify-between items-center gap-x-2">
-          <h1 className="dark:text-white text-black">YTranslate</h1>
-          <input
-            type="range"
-            min={0}
-            max={100}
-            value={YTranslate}
-            onChange={(e) => setYTranslate(Number(e.target.value))}
-          />
-          <h1 className="dark:text-white text-black">{YTranslate}</h1>
+          <Slider label="YTranslate" min={0} max={100} initial={YTranslate} onChange={(v) => setYTranslate(Math.round(v))} />
         </div>
         <div className="flex justify-between items-center gap-x-2">
-          <h1 className="dark:text-white text-black">ZTranslate</h1>
-          <input
-            type="range"
-            min={0}
-            max={100}
-            value={ZTranslate}
-            onChange={(e) => setZTranslate(Number(e.target.value))}
-          />
-          <h1 className="dark:text-white text-black">{ZTranslate}</h1>
+          <Slider label="ZTranslate" min={0} max={100} initial={ZTranslate} onChange={(v) => setZTranslate(Math.round(v))} />
         </div>
         <div className="flex justify-between items-center gap-x-2">
-          <h1 className="dark:text-white text-black">Length</h1>
-          <input
-            type="range"
-            min={1}
-            max={10}
-            value={length}
-            onChange={(e) => setLength(Number(e.target.value))}
-          />
-          <h1 className="dark:text-white text-black">{length}</h1>
+          <Slider label="Length" min={1} max={10} initial={length} onChange={(v) => setLength(Math.round(v))} />
         </div>
       </div>
       <div

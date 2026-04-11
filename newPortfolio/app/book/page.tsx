@@ -1,6 +1,7 @@
 "use client"
 import {motion} from "motion/react"
 import { useState } from "react";
+import Slider from "../../components/Slider";
 
 export default function Home(){
     const [xValue, setXValue] = useState(0);
@@ -15,29 +16,19 @@ export default function Home(){
         <>
             <div className="fixed top-5 left-5 z-50">
                 <div className="flex items-center gap-x-2">
-                    <h1 className="dark:text-white text-black">Rotate-x</h1>
-                    <input type="range" min={0} max={360} value={xValue} onChange={(e)=>setXValue(Number(e.target.value))} />
-                    <h1>{xValue}</h1>
+                    <Slider label="Rotate-x" min={0} max={360} initial={xValue} onChange={(v)=>setXValue(Math.round(v))} />
                 </div>
                 <div className="flex items-center gap-x-2">
-                    <h1>Rotate-y</h1>
-                    <input type="range" min={0} max={360} value={yValue} onChange={(e)=>setYValue(Number(e.target.value))} />
-                    <h1>{yValue}</h1>
+                    <Slider label="Rotate-y" min={0} max={360} initial={yValue} onChange={(v)=>setYValue(Math.round(v))} />
                 </div>
                 <div className="flex items-center gap-x-2">
-                    <h1>Rotate-z</h1>
-                    <input type="range" min={0} max={360} value={zValue} onChange={(e)=>setZValue(Number(e.target.value))} />
-                    <h1>{zValue}</h1>
+                    <Slider label="Rotate-z" min={0} max={360} initial={zValue} onChange={(v)=>setZValue(Math.round(v))} />
                 </div>
                 <div className="flex items-center gap-x-2">
-                    <h1>Gap</h1>
-                    <input type="range" min={1} max={100} value={gap} onChange={(e)=>setGap(Number(e.target.value))} />
-                    <h1>{gap}</h1>
+                    <Slider label="Gap" min={1} max={100} initial={gap} onChange={(v)=>setGap(Math.round(v))} />
                 </div>
                 <div className="flex items-center gap-x-2">
-                    <h1>Page</h1>
-                    <input type="range" min={1} max={10} value={page} onChange={(e)=>setPage(Number(e.target.value))} />
-                    <h1>{page}</h1>
+                    <Slider label="Page" min={1} max={10} initial={page} onChange={(v)=>setPage(Math.round(v))} />
                 </div>
             </div>
 

@@ -21,6 +21,7 @@ export default function Comp() {
             <Mixer text="Sonner" link="/sonner"></Mixer>
             <Mixer text="Book" link="/book"></Mixer>
             <Mixer text="Magnetic Button" link="/magneticButton"></Mixer>
+            <Mixer text="Slider" link="/slider"></Mixer>
             <Mixer text="Rauno Staggered Text" link="/staggeredText" />
             <Mixer text="Vanish Input" link="/vanishInput" />
             {theme === "dark" && (

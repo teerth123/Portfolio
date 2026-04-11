@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { useState } from "react";
+import Slider from "../../components/Slider";
 
 export default function InvertedTabs() {
   const tabs = ["All Posts", "Engineering", "Community", "Press", "Changelog"];
@@ -14,12 +15,9 @@ export default function InvertedTabs() {
       <div className="fixed top-5 left-5">
         <div className="flex justify-center items-center gap-2">
           <h1>Animation Timer</h1>
-          <input
-            type="range"
-            min={0}
-            max={5}
-            onChange={(e) => setTimer(Number(e.target.value))}
-          />
+          <div className="w-48">
+            <Slider label="timer" min={0} max={5} initial={timer} onChange={(v) => setTimer(Number(v.toFixed(2)))} />
+          </div>
           <h1>{timer}</h1>
         </div>
       </div>
